@@ -1,49 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6e6e6"
     tools:context=".CardActivity">
 
-    <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_one"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        card_view:cardCornerRadius="4dp"
-        card_view:cardBackgroundColor="@color/purple_200">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Long press to check"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#666666" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Contoh Card"
-            android:textSize="30sp"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="10dp"
-            android:gravity="center_vertical" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible">
 
-    <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_two"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        card_view:cardCornerRadius="4dp"
-        card_view:cardBackgroundColor="@color/purple_200">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardIstiqlal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
 
-        <TextView
-            android:id="@+id/text_two"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMasjid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Masjid Istiqlal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Masjid Istiqlal adalah masjid nasional negara Republik Indonesia yang terletak di Jakarta"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardJakarta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvJakarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Jakarta"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Daerah Khusus Ibukota Jakarta adalah ibu kota negara dan kota terbesar di Indonesia."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardBorobudur"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Contoh Card"
-            android:textSize="30sp"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="20dp"
-            android:gravity="center_vertical" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp">
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBorobudur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Candi Borobudur"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="#999999" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnWhatsSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show what's selected"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
