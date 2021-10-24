@@ -3,4 +3,6 @@
     <string name="title">About Me</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Rahman Zafran</string>
+    <string name="email">zav66@gmail.com</string>
 </resources>
