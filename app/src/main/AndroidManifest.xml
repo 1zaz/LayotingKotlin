@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LayotingKotlin">
         <activity android:name=".CardActivity"></activity>
-        <activity android:name=".SimpleLayoutActivity" />
+        <activity android:name=".TabLayoutActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
