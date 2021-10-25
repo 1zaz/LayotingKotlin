@@ -7,4 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="box_android">#A2B29F</color>
+    <color name="box_web">#C3AED6</color>
 </resources>
