@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Rahman Zafran</string>
     <string name="email">zav66@gmail.com</string>
+    <string name="android">Android</string>
+    <string name="web">Website</string>
 </resources>
