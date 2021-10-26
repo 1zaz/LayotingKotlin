@@ -6,6 +6,6 @@
         android:angle="180" />
 
     <corners
-        android:radius="@dimen/box_radius">
+        android:radius="48dp">
     </corners>
 </shape>
